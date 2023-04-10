@@ -1,0 +1,7 @@
+1. a0 a1 a2 and a2 holds 13 (generally a3-a7 also contains arguments)
+2. There's no call to f or g function
+3. 0x642 
+4. pc+4
+5. HE110 World, for big end we will need 0x726C6400, integers stay the same
+6. got different values when printing many times, so it's a random number, 
+it happends because we gave function no arguments so it took whatever was there

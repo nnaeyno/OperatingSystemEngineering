@@ -1,0 +1,6 @@
+1) from trap.c the function usertrap()
+2) p->trapframe->a7 is 7 and it indicates the syscall number (in this case it's syscall exec)
+3) from user mode
+4) on line 4458 where load word happens (lw a3,0(zero)) and num is in a3 register 
+5) by figure 3.3 0 isn't mapped and kernel crashed because it tried to * (int *) 0 and scause confirmed (scause value 0x0d, which is 13-load page fault).
+6) process id = 1, p->name is initcode\000\000...\000

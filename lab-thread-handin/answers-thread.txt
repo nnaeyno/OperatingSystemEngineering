@@ -1,0 +1,2 @@
+the error occurs when calling the insert(key, value, &table[i], table[i]); 
+if two threads call at the same time *p = e will rewrite each other
